@@ -22,7 +22,7 @@
       DURATION: 20HR
       TRAINER: JohN Doe
       ansible.builtin.debug:
-        msg: " Hello from task 3 {{ COURSE }} , DURATION is {{ DUARTION }}, TRAINER {{ TRAINER }}"    
+        msg: " Hello from task 3 {{ COURSE }} , DURATION is {{ DURATION }}, TRAINER {{ TRAINER }}"    
 
 
         # Task specific vars we can define then the importance will be given to task specific details    
