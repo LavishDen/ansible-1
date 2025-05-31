@@ -2,7 +2,7 @@
   hosts: local
   connection: local
   vars:
-    COURSE: Ansible  # in shell we refere as $VAR or ${VAR}
+    COURSE: Ansible  # in shell we refer as $VAR or ${VAR}
     DURATION: 10HR
     TRAINER: John
   tasks:
