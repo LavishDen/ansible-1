@@ -5,3 +5,9 @@
   - name: print hello world
     ansible.builtin.debug:
       msg: Hi, I am printing hello world
+
+
+
+
+#ansible-playbook -i inventory.ini 02-hello-world.yaml 
+# since we are using local no need of username and password
