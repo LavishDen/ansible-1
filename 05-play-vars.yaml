@@ -9,3 +9,10 @@
   - name: print course information
     ansible.builtin.debug:
       msg: "Hello {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+
+  - name: print course information again
+    ansible.builtin.debug:
+      msg: "Hello {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"    
+
+
+      # same variables available for all tasks because those are play level variables like global available for all tasks
