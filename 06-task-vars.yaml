@@ -11,3 +11,18 @@
       COURSE: DevOps
     ansible.builtin.debug:
       msg: "Hello {{ COURSE }}, Duration is {{ DURATION }}, Trainer is {{ TRAINER }}"
+
+  - name: print course information again
+    ansible.builtin.debug:
+      msg: "Hello from task 2 {{ COURSE}}, DURATION {{ DURATION }}, TRAINER {{ TRAINER }}"
+
+  - name: print course information with new course details specific to this task
+    vars:
+      COURSE: DevSecOps
+      DURATION: 20HR
+      TRAINER: JohN Doe
+      ansible.builtin.debug:
+        msg: " Hello from task 3 {{ COURSE }} , DURATION is {{ DUARTION }}, TRAINER {{ TRAINER }}"    
+
+
+        # Task specific vars we can define then the importance will be given to task specific details    
