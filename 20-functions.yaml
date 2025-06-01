@@ -10,4 +10,4 @@
 
    - name: print names
      ansible.builtin.debug:
-      msh: "Hello {{ persons }}"   
+      msg: "Hello {{ persons }}"   
