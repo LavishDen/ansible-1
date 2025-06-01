@@ -42,3 +42,13 @@
       name: "JOHNDOE SIMONS"      
      ansible.builtin.debug:
       msg: "Hello {{ name | lower}}"  
+
+   - name: check Ip address is valid or not
+     vars: 
+      ip: "300.567.980.789"
+     ansible.builtin.debug:
+      msg: "is ip  {{ ip | ansible.utils.ipaddr }}"
+
+
+
+        # max IP address 255.255.255.255
