@@ -6,7 +6,7 @@
      ansible.builtin.debug:
       msg: "Hello names are {{ item }}" # item is reserved keyword
      loops:
-     - Ruby
-     - Diamond
-     - Emerald
-     - Topaz   
+      - Ruby
+      - Diamond
+      - Emerald
+      - Topaz   
